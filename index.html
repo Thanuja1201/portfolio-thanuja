@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#eef1ee" />
+  <title>Thanuja Nallabothula | Python Full Stack Developer</title>
+  <meta name="description" content="Thanuja Nallabothula, MCA graduate and Python full-stack developer in Bengaluru. Django, SQL, frontend and computer vision projects, plus résumé." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Thanuja Nallabothula | Python Full Stack Developer" />
+  <meta property="og:description" content="Python full-stack developer in Bengaluru. See my projects and download my résumé." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2312372a'/%3E%3Ctext x='32' y='46' font-size='38' text-anchor='middle' fill='%23f2a900' font-family='Arial' font-weight='700'%3ET%3C/text%3E%3C/svg%3E" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Thanuja Nallabothula","jobTitle":"Python Full Stack Developer","address":{"@type":"PostalAddress","addressLocality":"Bengaluru","addressCountry":"IN"},"sameAs":["https://github.com/Thanuja1201","https://www.linkedin.com/in/thanuja-nallabothula-928452391"]}</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600..800&family=Hanken+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#projects">Skip to projects</a>
+
+  <header class="top">
+    <a class="brand" href="#home" aria-label="Thanuja, back to top">T.</a>
+    <nav aria-label="Main navigation">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="home">
+      <div>
+        <div class="who">
+          <img src="profile.jpeg" width="56" height="56" alt="Sketch portrait of Thanuja Nallabothula" />
+          <p>MCA graduate · Bengaluru · Open to full-time roles</p>
+        </div>
+        <h1>Thanuja Nallabothula</h1>
+        <p class="lead">I build Python and Django web apps with SQL databases and responsive frontends, and I've trained a CNN to classify currency images. I'm looking for an entry-level Python or full-stack developer role.</p>
+        <div class="actions">
+          <a class="btn btn-fill" href="Nallabothula_Thanuja_Resume.pdf" download>Download résumé</a>
+          <a class="btn" href="https://github.com/Thanuja1201" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/thanuja-nallabothula-928452391" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+      <div class="fan" aria-hidden="true">
+        <div class="cover cv-green">₹</div>
+        <div class="cover cv-pink">🍨</div>
+        <div class="cover cv-yellow">≡</div>
+      </div>
+    </section>
+
+    <!-- Project 1: currency classifier -->
+    <section class="chapter c-green" id="projects">
+      <div class="wrap two">
+        <div>
+          <p class="kind">Machine learning · Computer vision</p>
+          <h2>Identification of Fake Indian Currency</h2>
+          <ul class="points">
+            <li>Problem: tell genuine and fake Indian currency notes apart from images.</li>
+            <li>Built: a MobileNetV2 image classifier (128 × 128 input), converted with TensorFlow.js so it runs in the browser.</li>
+            <li>Result: 84.11% accuracy on the test dataset.</li>
+            <li>An educational project, not a certified counterfeit detector.</li>
+          </ul>
+          <ul class="tags"><li>Python</li><li>MobileNetV2</li><li>TensorFlow / Keras</li><li>TensorFlow.js</li><li>Image processing</li></ul>
+          <div class="links">
+            <a class="link" href="https://thanuja1201.github.io/Identification-of-Fake-Indian-Currency-using-CNN/web/" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
+            <a class="link" href="https://github.com/Thanuja1201/Identification-of-Fake-Indian-Currency-using-CNN" target="_blank" rel="noopener noreferrer">Source code ↗</a>
+          </div>
+        </div>
+        <div class="frame" aria-hidden="true">
+          <div class="bar"></div>
+          <!-- When you have a screenshot, replace .screen with: <img src="images/currency.webp" alt="Currency classifier screenshot" width="800" height="600"> -->
+          <div class="screen s-bill">
+            <div class="bill">
+              <span class="stamp">₹</span>
+              <div class="lines"><i></i><i></i><i></i></div>
+              <b class="scan"></b>
+              <em class="c tl"></em><em class="c tr"></em><em class="c bl"></em><em class="c br"></em>
+            </div>
+            <div class="chips"><span>Genuine</span><span>Fake</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project 2: notes app -->
+    <section class="chapter c-yellow">
+      <div class="wrap two flip">
+        <div>
+          <p class="kind">Full-stack · Django</p>
+          <h2>Notes Management System</h2>
+          <ul class="points">
+            <li>Problem: keep study notes organised in one place.</li>
+            <li>Built: create, view, edit and delete notes, grouped by category, stored in a SQL database.</li>
+            <!-- TODO: deploy it (Render / Railway / PythonAnywhere) and add a "Live demo" link -->
+          </ul>
+          <ul class="tags"><li>Python</li><li>Django</li><li>HTML &amp; CSS</li><li>SQL</li></ul>
+          <div class="links">
+            <a class="link" href="https://github.com/Thanuja1201/notes-management-system" target="_blank" rel="noopener noreferrer">Source code ↗</a>
+          </div>
+        </div>
+        <div class="frame" aria-hidden="true">
+          <div class="bar"></div>
+          <div class="screen s-notes">
+            <div class="side"><b>Categories</b><span class="on">Python</span><span>Django</span><span>SQL</span></div>
+            <div class="list">
+              <div class="nt on"><strong>Functions &amp; objects</strong><i></i><i class="short"></i></div>
+              <div class="nt"><strong>Django models</strong><i></i><i class="short"></i></div>
+              <div class="nt"><strong>SQL joins</strong><i></i><i class="short"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project 3: Sweet Scoop -->
+    <section class="chapter c-pink">
+      <div class="wrap two">
+        <div>
+          <p class="kind">Frontend · Responsive design</p>
+          <h2>Sweet Scoop, ice cream website</h2>
+          <ul class="points">
+            <li>Problem: show flavours in a colourful, easy-to-browse layout.</li>
+            <li>Built: a responsive multi-section site with HTML, CSS and JavaScript.</li>
+          </ul>
+          <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>Responsive design</li></ul>
+          <div class="links">
+            <a class="link" href="https://thanuja1201.github.io/sweet-scoop/" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
+            <a class="link" href="https://github.com/Thanuja1201/sweet-scoop" target="_blank" rel="noopener noreferrer">Source code ↗</a>
+          </div>
+        </div>
+        <div class="frame" aria-hidden="true">
+          <div class="bar"></div>
+          <div class="screen s-scoop">
+            <div class="hero-mini">
+              <div class="cone-mini"><span class="sc s1"></span><span class="sc s2"></span><span class="sc s3"></span></div>
+              <div class="txt"><b>Sweet Scoop</b><i></i><i class="short"></i><em>See flavours</em></div>
+            </div>
+            <div class="flavours"><span class="f1">Strawberry</span><span class="f2">Vanilla</span><span class="f3">Chocolate</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section wrap" id="about">
+      <div class="about">
+        <div class="about-copy">
+          <h2>Practical software, built step by step.</h2>
+          <p class="big">I'm a postgraduate in Computer Applications who likes building software that works end to end.</p>
+          <p>My work covers Python, Django, SQL databases, frontend basics and computer vision. My projects taught me how the database, backend and interface of an app fit together.</p>
+          <p>I want to join a team where I can contribute to real software and learn from experienced developers.</p>
+        </div>
+        <div class="stats">
+          <div class="stat stat-green"><strong>9.11</strong><span>MCA CGPA out of 10</span></div>
+          <div class="stat stat-yellow"><strong>3</strong><span>Projects with public code</span></div>
+          <div class="stat stat-pink"><strong>5 months</strong><span>Python full-stack internship, 2024</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="skills">
+      <h2>Skills, and where I used them</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th scope="col">Skill</th><th scope="col">Currency classifier</th><th scope="col">Notes app</th><th scope="col">Sweet Scoop</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Python</th><td class="y"><span class="sr">Used</span></td><td class="y"><span class="sr">Used</span></td><td><span class="sr">Not used</span></td></tr>
+            <tr><th scope="row">Django</th><td><span class="sr">Not used</span></td><td class="y"><span class="sr">Used</span></td><td><span class="sr">Not used</span></td></tr>
+            <tr><th scope="row">SQL</th><td><span class="sr">Not used</span></td><td class="y"><span class="sr">Used</span></td><td><span class="sr">Not used</span></td></tr>
+            <tr><th scope="row">HTML and CSS</th><td class="y"><span class="sr">Used</span></td><td class="y"><span class="sr">Used</span></td><td class="y"><span class="sr">Used</span></td></tr>
+            <tr><th scope="row">JavaScript</th><td class="y"><span class="sr">Used</span></td><td><span class="sr">Not used</span></td><td class="y"><span class="sr">Used</span></td></tr>
+            <tr><th scope="row">TensorFlow / Keras, CNN</th><td class="y"><span class="sr">Used</span></td><td><span class="sr">Not used</span></td><td><span class="sr">Not used</span></td></tr>
+            <tr><th scope="row">Git and GitHub</th><td class="y"><span class="sr">Used</span></td><td class="y"><span class="sr">Used</span></td><td class="y"><span class="sr">Used</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="learning"><strong>Learning and practising:</strong> React.js, REST APIs, MySQL, PyTorch, OpenCV.</p>
+    </section>
+
+    <section class="section wrap" id="experience">
+      <h2>Experience and education</h2>
+      <ol class="log">
+        <li>
+          <p class="when">Jan – May 2024</p>
+          <div>
+            <h3>Python Full Stack Development Intern</h3>
+            <p class="org">Sattva Infotech · Tirupati</p>
+            <p>Supported coding and debugging tasks on Python full-stack work under supervision.</p>
+            <!-- TODO: add 2–3 specifics: what you built, which tools, what changed because of it -->
+          </div>
+        </li>
+        <li>
+          <p class="when">2024 – 2026</p>
+          <div>
+            <h3>Master of Computer Applications (MCA)</h3>
+            <p class="org">Sri Venkateswara College of Engineering · Tirupati</p>
+            <p>CGPA 9.11 / 10</p>
+          </div>
+        </li>
+        <li>
+          <p class="when">2021 – 2024</p>
+          <div>
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+            <p class="org">SDHR Degree College · Tirupati</p>
+            <p>CGPA 7.8 / 10</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <h2>Hiring a junior Python full-stack developer?</h2>
+        <a class="big-mail" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=nallabothulathanuja1201@gmail.com&amp;su=Hello%20Thanuja" target="_blank" rel="noopener noreferrer">nallabothulathanuja1201@gmail.com</a>
+        <div class="actions">
+          <a class="btn btn-dark" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=nallabothulathanuja1201@gmail.com&amp;su=Hello%20Thanuja" target="_blank" rel="noopener noreferrer">Email me</a>
+          <button class="btn" type="button" id="copyEmail" data-email="nallabothulathanuja1201@gmail.com">Copy email</button>
+          <a class="btn" href="https://github.com/Thanuja1201" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/thanuja-nallabothula-928452391" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <p class="loc">Bengaluru, Karnataka, India</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>© <span id="year"></span> Thanuja Nallabothula</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
